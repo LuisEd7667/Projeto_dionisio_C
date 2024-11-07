@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academia de JIU-JITSU</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-">
+        <!--mecheraq dps-->
+        <div class="container">
+          <!--logo-->
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../img/logo9.1.png" alt="logo" width="100" id="logo"
+          /></a>
+          <!--botão-->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--sidebar-->
+          <div
+            class="sidebar offcanvas offcanvas-start w-100"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!--sidebar header-->
+            <div class="offcanvas-header text-black border-bottom">
+              <img src="../img/logo9.1.png" alt="" width="100" />
+              <button
+                type="button"
+                class="btn-close btn-close-black shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!--sidebar body-->
+            <div class="offcanvas-body flex-lg-row p-4">
+              <ul
+                class="navbar-nav fs-5 flex-grow-1 d-flex justify-content-center aling-itens-center"
+                id="sidebar-body"
+              >
+                <li class="nav-item mx-2">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="../pg/sobre_nos.html">SOBRE NÓS</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">HISTÓRIA DO JIU-JITSU</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">UNIDADES</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">PLANOS</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="../pg/contato.html">CONTATO</a>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center align-items-center">
+                <a
+                  class="btn btn-primary rounded-3 fs-5 btn_nav"
+                  href="#"
+                  role="button"
+                  >MATRICULE-SE JÁ</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12"
+          >
+            <div class="ava_alunos" id="contato_forj">
+              <div class="container_ava">
+                <h1 class="titulo_ava text-center text-light">
+                  FALE COM A GENTE
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-4">
+        <div class="formulario_forj container">
+          <h2 class="titulo_form">Formulário de Contato</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" required />
+            </div>
+            <div class="form-group">
+              <label for="como-soube">Como ficou sabendo sobre nós?</label>
+              <select id="como-soube" name="como-soube" required>
+                <option value="google">Google</option>
+                <option value="redes-sociais">Redes Sociais</option>
+                <option value="indicado">Indicado por alguém</option>
+                <option value="indicado">Amigo/familiar</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <input type="text" id="assunto" name="assunto" required />
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mapa responsivo -->
+      <div class="container">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117011.45933022354!2d-46.631055990823484!3d-23.58251455449998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1730985796192!5m2!1spt-BR!2sbr"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <!-- Rodapé -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-light fs-5 tel_rodape">
+          TELEFONE: +55 12 996478833
+        </p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <img src="../img/logo9.1.png" class="logo_rodape" width="100" /><use
+            xlink:href="#bootstrap"
+          />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-facebook fs-5 text-light"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-whatsapp fs-5 text-light"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-twitter-x fs-5 text-light"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-instagram fs-5 text-light"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

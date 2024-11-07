@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academia de JIU-JITSU</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-">
+        <!--mecheraq dps-->
+        <div class="container">
+          <!--logo-->
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo9.1.png" alt="logo" width="100" id="logo"
+          /></a>
+          <!--botão-->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--sidebar-->
+          <div
+            class="sidebar offcanvas offcanvas-start w-100"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!--sidebar header-->
+            <div class="offcanvas-header text-black border-bottom">
+              <img src="../img/logo9.1.png" alt="" width="100" />
+              <button
+                type="button"
+                class="btn-close btn-close-black shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!--sidebar body-->
+            <div class="offcanvas-body flex-lg-row p-4">
+              <ul
+                class="navbar-nav fs-5 flex-grow-1 d-flex justify-content-center aling-itens-center"
+                id="sidebar-body"
+              >
+                <li class="nav-item mx-2">
+                  <a class="nav-link" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="pg/sobre_nos.html">SOBRE NÓS</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">HISTÓRIA DO JIU-JITSU</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">UNIDADES</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">PLANOS</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="pg/contato.html">CONTATO</a>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center align-items-center">
+                <a
+                  class="btn btn-primary rounded-3 fs-5 btn_nav"
+                  href="#"
+                  role="button"
+                  >MATRICULE-SE JÁ</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--carousel-->
+    <main>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/academia (1).png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1 class="fcarousel_1">FORJA</h1>
+              <h2 class="fcarousel_2">JIU-JITSU</h2>
+              <h3 class="fcarousel_3">FAÇA PARTE DA NOSSA FAMÍLIA</h3>
+              <a
+                class="btn btn-primary rounded-3"
+                id="btn_sb"
+                href="pg/sobre_nos.html"
+                role="button"
+                >SAIBA MAIS +</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/estrutura acad.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1 class="fcarousel_2">CONHEÇA NOSSA INFRAESTRUTURA</h1>
+              <a
+                class="btn btn-primary rounded-3"
+                id="btn_sb"
+                href="#"
+                role="button"
+                >SAIBA MAIS +</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/planos.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1 class="fcarousel_2">CONHEÇA NOSSOS PLANOS</h1>
+              <a
+                class="btn btn-primary rounded-3"
+                id="btn_sb"
+                href="#"
+                role="button"
+                >SAIBA MAIS +</a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--conteudo após o carrosel-->
+      <div class="branco">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12"
+            >
+              <div class="s_forj">
+                <div class="my-4">
+                  <h1 class="h1_forj text-center">
+                    O QUE É A <span class="negri fw-bold">FORJA JIU-JITSU</span>
+                  </h1>
+                </div>
+                <div class="text_forj">
+                  <p class="p_forj">
+                    A Forja Jiu-Jitsu é uma academia de artes marciais focada no
+                    ensino e na prática do Jiu-Jitsu Brasileiro. Fundada com o
+                    objetivo de criar um ambiente de aprendizado e crescimento,
+                    a Forja Jiu-Jitsu oferece treinamentos para pessoas de todos
+                    os níveis, desde iniciantes até competidores avançados.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Como tudo começou-->
+      <div class="container">
+        <div class="row my-5">
+          <div
+            class="col-12 col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-sm-12 texto_botton"
+          >
+            <div class="container_1">
+              <h1 class="py-2 text-light">COMO TUDO COMEÇOU</h1>
+              <p class="p_home_1 py-2 fs-5 text-light">
+                A Forja Jiu-Jitsu não é apenas uma academia, mas um verdadeiro
+                santuário para aqueles que buscam moldar corpo e espírito
+                através da arte suave. Fundada por Elias “Forjador” Vasconcelos,
+                um ex-lutador de MMA e mestre de Jiu-Jitsu brasileiro, a
+                academia surgiu de uma visão ousada: transformar vidas por meio
+                do poder transformador da disciplina, da técnica e da filosofia
+                das artes marciais.
+              </p>
+              <div class="botao_home_1 my-4">
+                <a
+                  class="btn btn-primary"
+                  id="leia_mais"
+                  href="pg/sobre_nos.html"
+                  role="button"
+                  >LEIA MAIS +</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-sm-12 img_home_1"
+          >
+            <img src="img/anima2.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12"
+          >
+            <div class="cabe_prof">
+              <div class="titulo_prof">
+                <h1 class="text-center profs_1 text-light">
+                  ALGUNS DE NOSSOS PROFESSORES
+                </h1>
+              </div>
+              <div class="p_prof fs-5">
+                <p class="p_home_1 text-light">
+                  Aqui estão alguns de nossos professores de Jiu-Jitsu,
+                  profissionais experientes e dedicados que ajudam a formar
+                  campeões dentro e fora do tatame. Cada um traz uma bagagem
+                  única de conhecimento e vivência, contribuindo para o
+                  crescimento técnico e pessoal de nossos alunos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professores parte-1 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="prof">
+              <div class="prof-container">
+                <img src="img/prof1.jpeg" alt="Professor Yuki Souza" />
+                <span class="text-vertical">PROFESSOR: YUKI SOUZA</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="prof">
+              <div class="prof-container">
+                <img src="img/prof2.jpg" alt="Professor Rafael Costa" />
+                <span class="text-vertical">PROFESSOR: RAFAEL COSTA</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="prof">
+              <div class="prof-container">
+                <img src="img/prof6.jpeg" alt="Professora Camila Rocha" />
+                <span class="text-vertical">PROFESSORA: CAMILA ROCHA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--professores parte-2-->
+      <div class="container">
+        <div class="row">
+          <!-- Coluna para a primeira imagem -->
+          <div class="col-12 col-md-4 mb-4">
+            <div class="prof">
+              <div class="prof-container">
+                <img src="img/prof3.jpeg" alt="Professor Yuki Souza" />
+                <span class="text-vertical">PROFESSOR: YUKI SOUZA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna para a segunda imagem -->
+          <div class="col-12 col-md-4 mb-4">
+            <div class="prof">
+              <div class="prof-container">
+                <img src="img/prof4.jpeg" alt="Professor Rafael Costa" />
+                <span class="text-vertical">PROFESSOR: RAFAEL COSTA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna para a terceira imagem -->
+          <div class="prof_f col-12 col-md-4 mb-4">
+            <div class="prof">
+              <div class="prof-container">
+                <img src="img/prof5.jpg" alt="Professora Camila Rocha" />
+                <span class="text-vertical">PROFESSORA: CAMILA ROCHA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12"
+          >
+            <div class="ava_alunos">
+              <div class="container_ava">
+                <h1 class="titulo_ava text-center text-light">
+                  AVALIAÇÃO DE NOSSOS ALUNOS
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="container mt-5 cards_padd">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <p class="comment">
+                  "Os professores da Forja Jiu-Jitsu têm muito conhecimento e
+                  paciência. Eles me ajudam a superar meus limites todos os
+                  dias, me tornando um praticante mais confiante e focado."
+                </p>
+                <div class="author">
+                  <img src="img/rosto.png" alt="Aluno" class="avatar" />
+                  <p class="name">João Silva</p>
+                  <p class="course">Aluno de Jiu-Jitsu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <p class="comment">
+                  "A Forja Jiu-Jitsu é o lugar ideal para quem busca evolução
+                  contínua. Cada treino é desafiador, mas com muito apoio de uma
+                  equipe qualificada. Sinto que estou sempre aprendendo!"
+                </p>
+                <div class="author">
+                  <img src="img/rosto.png" alt="Aluno" class="avatar" />
+                  <p class="name">Maria Oliveira</p>
+                  <p class="course">Aluna de Jiu-Jitsu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <p class="comment">
+                  "Os treinos na Forja Jiu-Jitsu são intensos e recompensadores.
+                  Além da técnica, aprendo sobre disciplina e perseverança, o
+                  que me ajuda também na vida pessoal."
+                </p>
+                <div class="author">
+                  <img src="img/rosto.png" alt="Aluno" class="avatar" />
+                  <p class="name">Carlos Almeida</p>
+                  <p class="course">Aluno de Jiu-Jitsu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <p class="comment">
+                  "A Forja Jiu-Jitsu é mais que uma academia, é uma família! O
+                  ambiente é acolhedor e os instrutores fazem toda a diferença
+                  no meu aprendizado. Sinto uma evolução a cada treino."
+                </p>
+                <div class="author">
+                  <img src="img/rosto.png" alt="Aluno" class="avatar" />
+                  <p class="name">Carlos Almeida</p>
+                  <p class="course">Aluno de Jiu-Jitsu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Rodapé -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-light fs-5 tel_rodape">
+          TELEFONE: +55 12 996478833
+        </p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <img src="img/logo9.1.png" class="logo_rodape" width="100" /><use
+            xlink:href="#bootstrap"
+          />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-facebook fs-5 text-light"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-whatsapp fs-5 text-light"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-twitter-x fs-5 text-light"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-muted"
+              ><i class="bi bi-instagram fs-5 text-light"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
